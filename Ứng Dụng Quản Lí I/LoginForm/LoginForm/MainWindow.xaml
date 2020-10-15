@@ -1,0 +1,49 @@
+﻿<Window x:Class="LoginForm.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoginForm"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        ResizeMode="NoResize"
+        Title="Login - App" Height="450" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Margin="20 0" Grid.Row="1">
+            <Label HorizontalContentAlignment="Center" 
+                   FontSize="30"
+                   FontWeight="Bold"
+                   Foreground="#2D9AC5"
+                   Content="Login Form"/>
+            <!--Username-->
+            <Label Content="Username"/>
+            <TextBox Name="username" LostFocus="username_LostFocus"/>
+            <TextBox GotFocus="user_plachoder_GotFocus" 
+                     Name="user_plachoder" 
+                     Text="UserName" 
+                     Foreground="#C333" FontStyle="Italic" 
+                     Padding=" 5 0" Margin="0 -18 0 0"/>
+            <!--Password-->
+            <Label Content="Password"/>
+            <PasswordBox Name="password"
+                         LostFocus="password_LostFocus"/>
+            <TextBox GotFocus="password_plachoder_GotFocus" 
+                     Name="password_plachoder" 
+                     Text="Password" 
+                     Foreground="#C333" FontStyle="Italic" 
+                     Padding=" 5 0" Margin="0 -18 0 0"/>
+        </StackPanel>
+        <DockPanel Grid.Row="2">
+            <Label Name="Version"
+                   FontSize="10"
+                   DockPanel.Dock="Bottom"  
+                   HorizontalContentAlignment="Center"/>
+            <Label/>
+        </DockPanel>
+    </Grid>
+</Window>

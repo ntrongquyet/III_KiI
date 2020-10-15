@@ -1,0 +1,24 @@
+1
+-	https://vn.000webhost.com/
+- Các gói hộ trợ: 
+	+	300 MB Dung lượng đĩa
+	+	Băng thông giới hạn (3 GB)
+	+	1 MySQL Database
+- https://18600011.000webhostapp.com/info.php
+2
+-	https://infinityfree.net/
+-	Các gói hỗ trợ:
+	+	Không giới hạn ung lượng đĩa
+	+	Không giới hạn băng thông
+	+	Nhiều phiên bản PHP
+	+	MySQL databases - 400
+-	http://18600011.great-site.net/info.php
+3
+-	https://byet.host/
+-	Các gói hỗ trợ:
+	+	5GB Dung lượng đĩa
+	+	Không giới hạn băng thông
+	+	Cơ sở dữ liệu không giới hạn
+	+	Dung lượng MySQL không lường được.
+-	http://18600011.byethost18.com/info.php
+	
