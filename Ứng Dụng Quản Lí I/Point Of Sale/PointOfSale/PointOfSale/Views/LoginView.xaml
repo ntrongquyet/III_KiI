@@ -1,0 +1,99 @@
+﻿<Window x:Class="PointOfSale.Views.LoginView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PointOfSale.Views"
+        mc:Ignorable="d"
+        Name="loginWindow"
+        DataContext="{StaticResource Login}"
+       RenderOptions.BitmapScalingMode="HighQuality"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Resource/Image/background_main.png"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Source="/Resource/Image/logo.png"
+               VerticalAlignment="Top"
+                Margin="25 20"/>
+
+        <Image Source="/Resource/Image/setting.png"
+               VerticalAlignment="Bottom"
+               Margin="35 20" MaxWidth="60"
+               ToolTip="Cài đặt thay đổi Server"/>
+        <Image Source="/Resource/Image/image-item.png" Grid.Column="3"
+           Margin="10"
+               HorizontalAlignment="Right"
+               VerticalAlignment="Top"/>
+
+        <StackPanel Grid.Column="1" VerticalAlignment="Top"
+                    Margin="30 40">
+            <TextBlock  Text="LOGIN" FontWeight="Bold" FontSize="35"
+                        Foreground="#5B4DCD"/>
+            <TextBlock Name="UsernameTitle" Text="Username" FontSize="15"
+                       FontWeight="Light" Foreground="#5B4DCD" />
+
+            <Canvas  Height="40">
+                <TextBox Name="Username"
+                         BorderThickness="0 0 0 1" 
+                         BorderBrush="#5B4DCD" 
+                         
+                         VerticalContentAlignment="Center"
+                         Background="Transparent" Panel.ZIndex="10"
+                         Foreground="#5B4DCD" FontSize="16" Width="315" Height="40"/>
+                <TextBlock Name="Text_Focus" FontStyle="Italic"
+                           Text="Type your username..." Canvas.Top="10"
+                           Foreground="#5B4DCD" 
+                           Opacity=".6" FontSize="14" Canvas.Left="2"/>
+            </Canvas>
+
+            <TextBlock Name="PasswordTitle" Text="Password" FontSize="15" Margin="0 30 0 0"
+                       FontWeight="Light" Foreground="#5B4DCD"/>
+            <Canvas  Height="40">
+                <PasswordBox Name="Password"
+                             BorderThickness="0 0 0 1" 
+                             BorderBrush="#5B4DCD" 
+                             VerticalContentAlignment="Center"
+                             Background="Transparent" Panel.ZIndex="10"
+                             Foreground="#5B4DCD" FontSize="16" 
+                             Width="315" Height="40"/>
+                <TextBlock Name="Text_Focus_Password" FontStyle="Italic"
+                           Text="Type your password..." Canvas.Top="10"
+                           Foreground="#5B4DCD" 
+                           Opacity=".6" FontSize="14" Canvas.Left="2"/>
+            </Canvas>
+        </StackPanel>
+
+        <Border Height="40" Grid.Column="1" CornerRadius="20"
+                Background="#8360F7" Width="100" HorizontalAlignment="Right"
+                VerticalAlignment="Bottom" Margin="0 0 20 90">
+            <Button Content="Submit" BorderThickness="0" 
+                    Background="Transparent" FontWeight="Bold"
+                    FontSize="20" Foreground="#F3EAF5"
+                    Command="{Binding LoginCommand}" 
+                    CommandParameter="{Binding ElementName=loginWindow}"/>
+        </Border>
+
+        <Border Height="40" Grid.Column="2" CornerRadius="20" 
+                Background="#8360F7" Width="80"
+                VerticalAlignment="Bottom" Margin="0 0 0 90">
+            <Button Content="Exit" BorderThickness="0"
+                    Background="Transparent" FontWeight="Bold"
+                    FontSize="20" Foreground="#F3EAF5"/>
+        </Border>
+
+        <Label Grid.Column="3" Name="versionLabel" Content="v1.1.1.2" 
+                VerticalAlignment="Bottom" HorizontalContentAlignment="Center"
+               Foreground="#5B4DCD" Margin="0 0 0 10"/>
+
+    </Grid>
+</Window>
