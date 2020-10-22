@@ -57,9 +57,10 @@ CREATE SCHEMA SinhVien AUTHORIZATION SinhVien
 CREATE SCHEMA HeThong AUTHORIZATION dbo
 
  -- Câu 6
- Alter Schema GiaoVien
- transfer dbo.BoMon
- ALter Schema GiaoVien
- transfer dbo.CanBo
- ALter Schema GiaoVien
- transfer dbo.CanBo
+ALTER SCHEMA GiaoVien transfer dbo.BoMon
+
+ALTER SCHEMA GiaoVien transfer dbo.CanBo
+
+ALTER SCHEMA GiaoVien transfer dbo.CanBo
+
+-- Câu 7

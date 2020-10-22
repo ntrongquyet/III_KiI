@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <form action="/BTCN04/sum.php" method="GET">
+    <form action="./sum.php" method="GET">
         <div class="form-group">
             <label for="inputNumberA">Number A</label>
             <input type="number" class="form-control" id="numA" name="numA" placeholder="Number A" required>
