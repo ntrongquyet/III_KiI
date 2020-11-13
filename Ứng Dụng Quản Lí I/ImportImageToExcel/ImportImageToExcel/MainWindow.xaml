@@ -27,12 +27,20 @@
                   Canvas.Left="326" Canvas.Top="11">
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
-                    <WrapPanel></WrapPanel>
+                    <WrapPanel HorizontalAlignment="Center"></WrapPanel>
                 </ItemsPanelTemplate>
             </ListView.ItemsPanel>
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <Image Source="{Binding ImageBinary}" Width="100" Height="100"/>
+                    <StackPanel>
+                        <Image HorizontalAlignment="Center" Source="{Binding ImageBinary}" 
+                           Width="150" Height="100"/>
+                        <Label Content="{Binding Name}"
+                               HorizontalContentAlignment="Center" />
+                        <Label Content="{Binding Price}"
+                               HorizontalContentAlignment="Center"
+                               FontSize="20"/>
+                    </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

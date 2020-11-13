@@ -1,0 +1,22 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+h1{
+    text-align:center;
+}
+table{
+    margin: 0 auto;
+}
+td{
+    font-size: 50px;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    border: solid 2px #5a5a5a;
+    cursor: pointer;
+}
+td img{
+    width: 70px;
+    height: 70px;
+}

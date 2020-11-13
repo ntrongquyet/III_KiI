@@ -1,0 +1,4 @@
+D:\III_CK18\3_18CK\PhatTrienUngDungCSDL\ThucHanh\OOP-TinhTienLuong\SQLOnTap\bin\Debug\netcoreapp3.1\SQLOnTap.exe
+D:\III_CK18\3_18CK\PhatTrienUngDungCSDL\ThucHanh\OOP-TinhTienLuong\SQLOnTap\obj\Debug\netcoreapp3.1\SQLOnTap.csprojAssemblyReference.cache
+D:\III_CK18\3_18CK\PhatTrienUngDungCSDL\ThucHanh\OOP-TinhTienLuong\SQLOnTap\obj\Debug\netcoreapp3.1\SQLOnTap.AssemblyInfoInputs.cache
+D:\III_CK18\3_18CK\PhatTrienUngDungCSDL\ThucHanh\OOP-TinhTienLuong\SQLOnTap\obj\Debug\netcoreapp3.1\SQLOnTap.AssemblyInfo.cs
